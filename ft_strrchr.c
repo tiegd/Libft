@@ -6,12 +6,21 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:51:11 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/09 16:53:42 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/09 17:37:15 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 char    *strrchr(const char *s, int c)
 {
-    
+    int i;
+    char    *str;
+
+    i = 0;
+    while (s[i])
+    {
+        if (i = c)
+            str = s[i];
+        i++;
+    }
 }

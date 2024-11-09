@@ -6,13 +6,13 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:51:10 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/09 15:52:18 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/09 16:44:47 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlen(const char *s);
+#include <libft.h>
 
-unsigned int    ft_strlcat(chardest, char *src, unsigned int size)
+size_t  ft_strlcat(chardest, char *src, unsigned int size)
 {
     unsigned int    lensource;
     unsigned int    lendest;

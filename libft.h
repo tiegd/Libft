@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/09 15:47:07 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/09 16:44:07 by gaducurt         ###   ########.fr       */
+/*   Created: 2024/11/09 16:41:35 by gaducurt          #+#    #+#             */
+/*   Updated: 2024/11/09 16:49:29 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#ifndef LIBFT_H
+# define LIBFT_H
 
-size_t    ft_strlcpy(chardest, char *src, unsigned int size)
-{
-    int    srclen;
-    int    i;
+#include <stdlib.h>
 
-    i = 0;
-    srclen = ft_strlen(src);
-    if (size == 0)
-        return (srclen);
-    while (src[i] && i < size -1)
-    {
-        dest[i] = src[i];
-        i++;
-    }
-    dest[i] = '\0';
-    return (srclen);
-}
+#endif

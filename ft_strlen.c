@@ -6,15 +6,16 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:36:02 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/09 16:43:04 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/11 12:13:21 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+//#include <libft.h>
+#include <stdlib.h>
 
 size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i] != '\0')

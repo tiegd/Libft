@@ -6,13 +6,13 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:47:07 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/09 16:44:07 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:17:39 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-size_t    ft_strlcpy(chardest, char *src, unsigned int size)
+size_t    ft_strlcpy(char dest, char *src, unsigned int size)
 {
     int    srclen;
     int    i;

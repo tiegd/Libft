@@ -6,13 +6,13 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:32:14 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/09 15:34:28 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:04:38 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (c >= 32 && c <= 126)
-        return(1);
-    return(1);
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }

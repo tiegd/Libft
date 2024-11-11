@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:51:11 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/11 12:26:46 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/11 12:28:25 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char    *ft_strrchr(const char *s, int c)
     }
     return(0);
 }
-
+/*
 #include <stdio.h>
 
 int main()
@@ -35,4 +35,4 @@ int main()
     const char    s[] = "Bonjour tout le /monde !";
     char    c = '/';
     printf("%s", (ft_strrchr(s, c)));
-}
+}*/

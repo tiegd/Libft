@@ -6,7 +6,7 @@
 #    By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 13:26:52 by gaducurt          #+#    #+#              #
-#    Updated: 2024/11/18 10:19:46 by gaducurt         ###   ########.fr        #
+#    Updated: 2024/11/18 14:29:19 by gaducurt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ SRC = 	ft_isalpha.c	\
 		ft_tolower.c	\
 		ft_strchr.c		\
 		ft_strnstr.c	\
+		ft_atoi.c		\
 
 OBJ = $(SRC:.c=.o)
 

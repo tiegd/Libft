@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 12:37:28 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 13:12:12 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/18 14:42:26 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ int	ft_atoi(const char *nptr)
 
 	count = 0;
 	inv = 1;
-	while ((*nptr == ' ') && *nptr != 0)
+	while ((*nptr == '\f' || *nptr == '\n' || *nptr == '\r' || *nptr == '\t'
+			|| *nptr == '\v' || *nptr == ' ') && *nptr != 0)
 		nptr++;
 	if (*nptr == '-' || *nptr == '+')
 	{
@@ -34,7 +35,7 @@ int	ft_atoi(const char *nptr)
 	}
 	return (count * inv);
 }
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -47,3 +48,4 @@ int	main(int argc, const char **argv)
 	}
 	
 }
+*/

@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:41:35 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 08:02:57 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/18 08:15:22 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strrchr(const char *s, int c);
 void	ft_bzero(void *s, size_t n);
 int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 #endif

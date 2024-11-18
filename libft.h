@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:41:35 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 08:36:27 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/18 12:38:55 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+int     ft_atoi(const char *nptr);
 
 #endif

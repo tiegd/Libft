@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:41:35 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 14:57:52 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/18 16:07:49 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 char	*ft_strdup(const char *s);
+void	*calloc(size_t nmemb, size_t size);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 07:45:34 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 08:01:24 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/18 11:48:03 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_bzero(void *s, size_t n)
 
 	ptr = s;
 	i = 0;
-	while (i <= n)
+	while (i < n)
 	{
 		ptr[i] = 0;
 		i++;

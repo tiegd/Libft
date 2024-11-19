@@ -14,7 +14,7 @@
 
 static int	ft_diff(void *dest, const void *src, size_t n)
 {
-	unsigned char	*d;
+	unsigned char		*d;
 	const unsigned char	*s;
 
 	d = (unsigned char *) dest;
@@ -32,8 +32,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	d = dest;
 	s = src;
 	if (dest == 0 && src == 0)
-		return (NULL);	
-	if (ft_diff(dest, src, n) ==  0)
+		return (NULL);
+	if (ft_diff(dest, src, n) == 0)
 		dest = ft_memcpy(dest, src, n);
 	else
 	{

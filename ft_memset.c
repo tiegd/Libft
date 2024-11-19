@@ -6,9 +6,13 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 06:52:34 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/19 07:51:59 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/19 10:38:53 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Work like ft_bzero but fills n bytes with c.
+*/
 
 #include "libft.h"
 
@@ -26,18 +30,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-/*
-void	ft_bzero(void *s, size_t n)
-{
-	unsigned char	*ptr;
-	size_t			i;
-
-	ptr = s;
-	i = 0;
-	while (i < n)
-	{
-		ptr[i] = 0;
-		i++;
-	}
-}*/

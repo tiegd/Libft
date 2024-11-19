@@ -6,7 +6,7 @@
 #    By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 13:26:52 by gaducurt          #+#    #+#              #
-#    Updated: 2024/11/19 07:01:30 by gaducurt         ###   ########.fr        #
+#    Updated: 2024/11/19 08:01:36 by gaducurt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ SRC = 	ft_isalpha.c	\
 		ft_strdup.c		\
 		ft_calloc.c		\
 		ft_memset.c		\
+		ft_memcpy.c		\
 
 OBJ = $(SRC:.c=.o)
 

@@ -18,29 +18,28 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	const unsigned char	*str;
 
 	i = 0;
-	str = (const unsigned char) s;
+	str = (const unsigned char *) s;
 	while (i < n)
 	{
 		if (str[i] == (unsigned char) c)
-			return (&s[i]);
+			return ((void *) &str[i]);
 		i++;
 	}
 	return (NULL);
 }
-/*
-char	*ft_strchr(const char *s, int c)
-{
-	int		i;
 
-	i = 0;
-	if ((char) c == '\0')
-		return ((char *) &s[len]);
-	while (s[i])
-	{
-		if ((char) s[i] == (char) c)
-			return ((char *) &s[i]);
-		i++;
-	}
-	return (0);
+/*
+#include <stdio.h>
+#include <string.h>
+
+int	main()
+{
+	size_t	n = 5;
+	const char	s[] = "Salut !";
+	char	c = 'u';
+
+	printf("%llu\n", (unsigned long long) s);
+	printf("%llu\n", (unsigned long long) (ft_memchr(s, c, n)));
+	printf("%llu\n", (unsigned long long) (memchr(s, c, n)));
 }
 */

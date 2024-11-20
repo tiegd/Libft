@@ -42,7 +42,6 @@ int	main()
 {
 	char	dest1[7];
 	char	dest2[7];
-	//char	dest3[7];
 	char	*src = "Hello !";
 
 	ft_memcpy((void *) dest1, (const void *) src, 6);
@@ -50,7 +49,5 @@ int	main()
 
 	memcpy((void *) dest2, (const void *) src, 6);
 	printf("%s\n", dest2);
-
-	//memmove((void *) dest3, (const void *) src, 6);
-	//printf("%s\n", dest3);
-}*/
+}
+*/

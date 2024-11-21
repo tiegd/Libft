@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+         #
+#    By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 13:26:52 by gaducurt          #+#    #+#              #
-#    Updated: 2024/11/19 08:01:36 by gaducurt         ###   ########.fr        #
+#    Updated: 2024/11/21 17:53:50 by tieg             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,6 +40,7 @@ SRC = 	ft_isalpha.c	\
 		ft_substr.c		\
 		ft_strjoin.c	\
 		ft_strtrim.c	\
+		ft_split.c		\
 
 OBJ = $(SRC:.c=.o)
 

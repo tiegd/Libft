@@ -28,37 +28,38 @@ static int	ft_check(char c, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*dest;
-	size_t	end;
-	size_t	start;
-	size_t	i;
+	unsigned char	*dest;
+	size_t			end;
+	size_t			start;
+	size_t			i;
 
 	start = 0;
-	end = ft_strlen(s1) - 1;
+	end = ft_strlen(s1);
 	i = 0;
 	while (ft_check(s1[start], set) == 1)
 		start++;
-	while (ft_check(s1[end], set) == 1)
+	while (end > start && ft_check(s1[end - 1], set) == 1)
 		end--;
 	dest = malloc(end - start + 1 * sizeof(char));
 	if (!(dest))
 		return (NULL);
-	while (start <= end)
+	while (start < end)
 	{
 		dest[i] = s1[start];
 		i++;
 		start++;
 	}
 	dest[i] = '\0';
-	return (dest);
+	return ((char *) dest);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
 {
-	char const	*s1 = "";
-	char const	*set = "";
+	char const	*s1 = "  \t \t \n   \n\n\n\t";
+	char const	*set = " \n\t";
 
 	printf("%s\n", ft_strtrim(s1, set));
 }
+*/

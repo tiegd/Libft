@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <limits.h>
+
 int	ft_atoi(const char *nptr)
 {
 	int	count;
@@ -17,8 +19,7 @@ int	ft_atoi(const char *nptr)
 
 	count = 0;
 	inv = 1;
-	while ((*nptr == '\f' || *nptr == '\n' || *nptr == '\r' || *nptr == '\t'
-			|| *nptr == '\v' || *nptr == ' ') && *nptr != 0)
+	while (*nptr == ' ' || (*nptr >= 9 && *nptr <= 13) && *nptr != 0)
 		nptr++;
 	if (*nptr == '-' || *nptr == '+')
 	{
@@ -26,11 +27,13 @@ int	ft_atoi(const char *nptr)
 			inv = -inv;
 		nptr++;
 	}
-	if (!(*nptr >= '0' && *nptr <= '9'))
-		return (0);
 	while ((*nptr >= '0' && *nptr <= '9') && *nptr != '\0')
 	{
 		count = (count * 10) + (*nptr - '0');
+		if (count > (unsigned long long)INT_MAX + 1 && inv == -1)
+			return (INT_MIN);
+		else if (count > INT_MAX && inv == 1)
+			return (INT_MAX);
 		nptr++;
 	}
 	return (count * inv);

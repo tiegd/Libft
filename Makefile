@@ -49,6 +49,10 @@ SRC = 	ft_isalpha.c	\
 		ft_putendl_fd.c	\
 		ft_putnbr_fd.c	\
 
+BONUS = ft_lstnew_bonus.c	\
+
+OBJBONUS = $(BONUS:.c=.o)
+
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
@@ -59,10 +63,12 @@ $(NAME): $(OBJ) Makefile $(HEADER)
 %.o : %.c
 	$(CC) $(FLAGS) -o $@ -c $<
 
+bonus: $(OBJ) $(OBJBONUS)
+	ar rcs $(NAME) $(OBJ) $(OBJBONUS)
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(OBJBONUS)
 fclean: clean
 	rm -f $(NAME)
-re: fclean all
+re: fclean all bonus
 
-.PHONY: all fclean re
+.PHONY: all fclean re bonus

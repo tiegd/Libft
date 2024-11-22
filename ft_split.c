@@ -31,7 +31,7 @@ static int	ft_count_word(const char *s, char c)
 	return (nb_word);
 }
 
-char	**free_split(char **double_tab, int nb_word)
+static char	**free_split(char **double_tab, int nb_word)
 {
 	int	i;
 
@@ -45,7 +45,7 @@ char	**free_split(char **double_tab, int nb_word)
 	return (NULL);
 }
 
-char	**ft_new_str(char **double_tab, const char *s, char c, int nb_word)
+static char	**ft_new_str(char **double_tab, const char *s, char c, int nb_word)
 {
 	int		i;
 	int		index;

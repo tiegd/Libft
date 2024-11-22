@@ -16,10 +16,12 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*dest;
 
+	if (size == 0 || nmemb == 0)
+		return (malloc(0));
 	dest = malloc(nmemb * size);
-	if (!(dest))
+	if (!dest)
 		return (NULL);
-	ft_bzero(dest, nmemb);
+	ft_bzero(dest, nmemb * size);
 	return (dest);
 }
 
@@ -32,7 +34,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 int main() {
     
     int i;
-    int * pointer = (int *) calloc( INT_NUMBER, sizeof(int) );
+    int * pointer = (int *) ft_calloc( INT_NUMBER, sizeof(int) );
 
     assert( pointer != NULL );
 

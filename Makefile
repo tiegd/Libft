@@ -55,6 +55,9 @@ BONUS = ft_lstnew_bonus.c		\
 		ft_lstlast_bonus.c		\
 		ft_lstadd_back_bonus.c	\
 		ft_lstdelone_bonus.c	\
+		ft_lstclear_bonus.c		\
+		ft_lstiter_bonus.c		\
+		ft_lstmap_bonus.c		\
 
 OBJBONUS = $(BONUS:.c=.o)
 
@@ -68,12 +71,15 @@ $(NAME): $(OBJ) Makefile $(HEADER)
 %.o : %.c
 	$(CC) $(FLAGS) -o $@ -c $<
 
-bonus: $(OBJ) $(OBJBONUS)
+bonus : .bonus
+
+.bonus: $(OBJ) $(OBJBONUS)
+	@touch .bonus
 	ar rcs $(NAME) $(OBJ) $(OBJBONUS)
 clean:
-	rm -f $(OBJ) $(OBJBONUS)
+	rm -f $(OBJ) $(OBJBONUS) .bonus
 fclean: clean
 	rm -f $(NAME)
 re: fclean all bonus
 
-.PHONY: all fclean re bonus
+.PHONY: all fclean re bonus .bonus

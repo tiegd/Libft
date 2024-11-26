@@ -47,7 +47,7 @@ SRC = 	ft_isalpha.c	\
 		ft_putchar_fd.c	\
 		ft_putstr_fd.c	\
 		ft_putendl_fd.c	\
-		ft_putnbr_fd.c	\
+		ft_putnbr_fd.c
 
 BONUS = ft_lstnew_bonus.c		\
 		ft_lstadd_front_bonus.c	\
@@ -56,8 +56,8 @@ BONUS = ft_lstnew_bonus.c		\
 		ft_lstadd_back_bonus.c	\
 		ft_lstdelone_bonus.c	\
 		ft_lstclear_bonus.c		\
-		ft_lstiter_bonus.c		\
-		ft_lstmap_bonus.c		\
+		ft_lstiter_bonus.c
+# ft_lstmap_bonus.c		
 
 OBJBONUS = $(BONUS:.c=.o)
 
@@ -65,21 +65,21 @@ OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ) Makefile $(HEADER)
-	ar rcs $(NAME) $(OBJ)
+$(NAME): $(OBJ) $(HEADER)
+	ar rcs $(NAME) $?
 
-%.o : %.c
+%.o : %.c Makefile
 	$(CC) $(FLAGS) -o $@ -c $<
 
 bonus : .bonus
 
 .bonus: $(OBJ) $(OBJBONUS)
+	ar rcs $(NAME) $?
 	@touch .bonus
-	ar rcs $(NAME) $(OBJ) $(OBJBONUS)
 clean:
 	rm -f $(OBJ) $(OBJBONUS) .bonus
 fclean: clean
 	rm -f $(NAME)
 re: fclean all bonus
 
-.PHONY: all fclean re bonus .bonus
+.PHONY: all fclean re bonus

@@ -12,13 +12,8 @@
 
 #include "libft.h"
 
-static int	ft_diff(void *dest, const void *src, size_t n)
+static int	ft_diff(void *d, const void *s, size_t n)
 {
-	unsigned char		*d;
-	const unsigned char	*s;
-
-	d = (unsigned char *) dest;
-	s = (const unsigned char *) src;
 	if (d < s || d >= s + n)
 		return (0);
 	return (1);
@@ -33,7 +28,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	s = src;
 	if (dest == 0 && src == 0)
 		return (NULL);
-	if (ft_diff(dest, src, n) == 0)
+	if (ft_diff(d, s, n) == 0)
 		dest = ft_memcpy(dest, src, n);
 	else
 	{

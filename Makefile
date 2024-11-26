@@ -69,7 +69,7 @@ $(NAME): $(OBJ) $(HEADER)
 	ar rcs $(NAME) $?
 
 %.o : %.c Makefile
-	$(CC) $(FLAGS) -o $@ -c $<
+	$(CC) $(CFLAGS) -o $@ -c $<
 
 bonus : .bonus
 

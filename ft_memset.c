@@ -10,10 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-**	Work like ft_bzero but fills n bytes with c.
-*/
-
 #include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)

@@ -10,11 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Compare ascii value to determine if is the same string.
-** We need to cast (unsigned char) for compare non ascii chars.
-*/
-
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

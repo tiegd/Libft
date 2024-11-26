@@ -27,7 +27,7 @@ static int	ft_count(int n)
 	return (i);
 }
 
-static char	*ft_putstr(size_t count, int n, char *dest, size_t i)
+static char	*ft_putdest(size_t count, int n, char *dest, size_t i)
 {
 	while (count-- > i)
 	{
@@ -60,7 +60,7 @@ char	*ft_itoa(int n)
 		dest[0] = '-';
 		i++;
 	}
-	dest = ft_putstr(count, n, dest, i);
+	dest = ft_putdest(count, n, dest, i);
 	return (dest);
 }
 /*

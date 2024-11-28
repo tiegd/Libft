@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 14:57:41 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/11 17:11:20 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:17:07 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Check if a char is an merical character.
+*/
 
 int	ft_isdigit(int c)
 {

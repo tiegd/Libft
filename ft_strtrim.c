@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 17:32:48 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/20 17:32:50 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:19:35 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Return a new string of content "s1", without characters of "set" at
+**	the begin end the end.
+*/
 
 #include "libft.h"
 

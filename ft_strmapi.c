@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 11:33:35 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/22 11:33:36 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:08:00 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Apply an f function on each character of a string "s" and stock the result
+**	in a new string with malloc.
+*/
 
 #include "libft.h"
 

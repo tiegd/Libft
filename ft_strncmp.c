@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:54:50 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 14:33:24 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:08:40 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Compare two srtings and return the result.
+*/
 
 #include "libft.h"
 

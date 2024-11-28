@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 14:45:34 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 15:03:12 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:52:22 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Copy the string "s" in a new string with malloc.
+*/
 
 #include "libft.h"
 

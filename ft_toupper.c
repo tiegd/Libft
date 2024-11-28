@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 08:03:30 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 08:20:29 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:27:52 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Convert a lowercase alphabetical character in capital character.
+*/
 
 int	ft_toupper(int c)
 {

@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 10:15:50 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/26 10:15:52 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:24:11 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Apply a function on each element of a linked list an stock the result in a new linked list.
+*/
 
 #include "libft.h"
 

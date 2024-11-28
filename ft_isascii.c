@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:21:39 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/11 17:12:03 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:16:41 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Check if a char is an ascii character.
+*/
 
 int	ft_isascii(int c)
 {

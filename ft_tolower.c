@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 08:14:05 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 08:20:33 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:27:19 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Convert a capital alphabetical character in lowercase character.
+*/
 
 int	ft_tolower(int c)
 {

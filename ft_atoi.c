@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 12:37:28 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 14:42:26 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:12:19 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Convert char * number in int (Ascii to Integer).
+*/
 
 #include <limits.h>
 

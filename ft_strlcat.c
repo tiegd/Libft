@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:51:10 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 07:35:41 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:59:43 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Concatenates a string "src" at the end of a string "dst" and return the
+**	total size. 
+*/
 
 #include "libft.h"
 

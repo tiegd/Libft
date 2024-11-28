@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 08:43:52 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/22 08:43:55 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:18:37 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Convert an int in char * number (Integer to Ascii).
+*/
 
 #include "libft.h"
 

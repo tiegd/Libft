@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 15:29:44 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/22 15:29:46 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:25:47 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Make a new element to add of a linked list.
+*/
 
 #include "libft.h"
 

@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 12:51:04 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/20 12:51:08 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:32:14 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Compare two memory blocks and return the difference.
+*/
 
 #include "libft.h"
 

@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 08:34:20 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 11:40:26 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:13:41 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Search the little string in the big string during the firsts "len"
+**	characters. 
+*/
 
 #include "libft.h"
 

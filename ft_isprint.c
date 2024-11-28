@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:32:14 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/11 17:04:38 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:17:23 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Check if a char is an printable character.
+*/
 
 int	ft_isprint(int c)
 {

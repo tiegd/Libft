@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 07:55:40 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/19 10:39:09 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:35:55 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Copy the content of a memory block "src" in a memory block "dest". This
+**	function don't manage the case of an overlap.
+*/
 
 #include "libft.h"
 

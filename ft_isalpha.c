@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 11:49:21 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/11 17:12:15 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:16:22 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Check if a char is an alphabetical character.
+*/
 
 int	ft_isalpha(int c)
 {

@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:17:02 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/20 14:17:06 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:24:41 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Copy a string "s" in a new string with malloc, since the index "start" to
+**	the index "start + len".
+*/
 
 #include "libft.h"
 

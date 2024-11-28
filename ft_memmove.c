@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 10:44:30 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/19 10:44:31 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:35:50 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Copy the content of a memory block "src" in a memory block "dest". This
+**	function manage the case of an overlap.
+*/
 
 #include "libft.h"
 

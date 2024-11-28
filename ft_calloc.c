@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 15:45:08 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 16:25:49 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:14:18 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Creat a buffer with malloc, full of NULL character.
+*/
 
 #include "libft.h"
 

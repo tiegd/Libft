@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 06:36:41 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/22 06:36:44 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:50:42 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Convert a tab (char *) "s" in double tab (char **). The double tab is the
+**	string "s" separated by the char "c".
+*/
 
 #include "libft.h"
 

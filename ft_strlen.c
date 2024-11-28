@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:36:02 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/11 17:05:16 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:05:14 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Return the length of a string "s".
+*/
 
 #include "libft.h"
 

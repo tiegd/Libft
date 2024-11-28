@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 16:51:11 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/11 17:14:53 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:15:23 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Return the last ocurence of "c" in the string "s".
+*/
 
 #include "libft.h"
 

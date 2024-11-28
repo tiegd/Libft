@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 08:22:45 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 12:34:45 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:51:08 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Return the first ocurence of "c" in the string "s".
+*/
 
 #include "libft.h"
 

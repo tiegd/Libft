@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:16:22 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/11 17:04:07 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:15:09 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Check if a char is an alphanumerical character.
+*/
 
 #include "libft.h"
 

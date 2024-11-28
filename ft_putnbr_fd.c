@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 14:00:02 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/22 14:00:04 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:45:42 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Convert and write an int "n" on fd display output.
+*/
 
 #include "libft.h"
 

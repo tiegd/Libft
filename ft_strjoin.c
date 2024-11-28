@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 16:38:18 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/20 16:38:20 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:55:59 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Concatenates two string with the great size with malloc.
+*/
 
 #include "libft.h"
 

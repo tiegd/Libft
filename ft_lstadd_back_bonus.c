@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 11:41:05 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/25 11:41:08 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:20:13 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Add a new element at the end of the linked list.
+*/
 
 #include "libft.h"
 

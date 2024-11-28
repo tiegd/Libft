@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 14:44:19 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/19 14:44:20 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:31:21 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Return the first ocurence of "c" in the memory block "s".
+*/
 
 #include "libft.h"
 

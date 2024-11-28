@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 15:47:07 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 07:38:48 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:01:39 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Copy a string "src" in a string "dst", and return the total size of the
+**	copied string.
+*/
 
 #include "libft.h"
 

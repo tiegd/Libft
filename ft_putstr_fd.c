@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 13:45:56 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/22 13:46:00 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:46:03 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Write a sting "s" on fd display output.
+*/
 
 #include "libft.h"
 

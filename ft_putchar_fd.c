@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tieg <tieg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 12:48:08 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/22 12:48:10 by gaducurt         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:44:46 by tieg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	Write a char "c" on fd display output.
+*/
 
 #include "libft.h"
 

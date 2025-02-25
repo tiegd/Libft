@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 06:36:41 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/22 06:36:44 by gaducurt         ###   ########.fr       */
+/*   Updated: 2025/02/25 11:33:01 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,12 +73,29 @@ static char	**ft_new_str(char **double_tab, const char *s, char c, int nb_word)
 	return (double_tab);
 }
 
+static int	check_empty_s(const char *s, char c)
+{
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == c)
+			i++;
+		else
+			return (1);
+	}
+	return (0);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	int		nb_word;
 	char	**double_tab;
 
 	if (!(s))
+		return (NULL);
+	if (!check_empty_s(s, c))
 		return (NULL);
 	nb_word = ft_count_word(s, c);
 	double_tab = malloc((nb_word + 1) * sizeof(char *));

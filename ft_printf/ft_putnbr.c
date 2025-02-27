@@ -38,7 +38,3 @@ int	ft_putnbr(int n)
 		return (-1);
 	return (count);
 }
-// int	main()
-// {
-// 	ft_putnbr(-4664, 0);
-// }

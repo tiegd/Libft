@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 13:00:25 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/26 13:00:27 by gaducurt         ###   ########.fr       */
+/*   Updated: 2025/02/27 13:20:23 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdarg.h>
 # include <stdio.h>
 # include <limits.h>
+# include "../libft.h"
 
 int		ft_printf(const char *str, ...);
 int		ft_putnbr(int n);
@@ -25,6 +26,5 @@ int		ft_putchar(char c);
 int		ft_putptr(size_t nbr, char *base);
 int		ft_putstr(const char *s);
 int		ft_putnbr_unsigned(unsigned int n);
-size_t	ft_strlen(const char *s);
 
 #endif

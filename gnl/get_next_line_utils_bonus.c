@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 18:04:41 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/12/10 18:04:44 by gaducurt         ###   ########.fr       */
+/*   Updated: 2025/05/07 15:19:35 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 **	Return the total number of char in a list.
 */
 
-int	ft_lst_size(t_list *lst)
+int	ft_lst_size(t_list_gnl *lst)
 {
 	int	size;
 
@@ -35,9 +35,9 @@ int	ft_lst_size(t_list *lst)
 **	Free a linked list.
 */
 
-void	ft_lstfree(t_list **lst)
+void	ft_lstfree(t_list_gnl **lst)
 {
-	t_list	*buffer;
+	t_list_gnl	*buffer;
 
 	if (lst)
 	{
@@ -51,15 +51,15 @@ void	ft_lstfree(t_list **lst)
 	}
 }
 
-int	ft_checklst(t_list *lst)
+int	ft_checklst(t_list_gnl *lst)
 {
-	int		i;
-	t_list	*element;
+	int			i;
+	t_list_gnl	*element;
 
 	i = 0;
 	if (!lst)
 		return (0);
-	element = ft_lstlast(lst);
+	element = ft_lstlast_gnl(lst);
 	while (element->content[i])
 	{
 		if (element->content[i] == '\n')
@@ -73,13 +73,13 @@ int	ft_checklst(t_list *lst)
 **	Creat a new element of list with a content in parameter.
 */
 
-void	ft_lstnew_back(t_list **lst, char *str, int len)
+void	ft_lstnew_back(t_list_gnl **lst, char *str, int len)
 {
-	t_list	*new;
-	t_list	*last;
-	int		i;
+	t_list_gnl	*new;
+	t_list_gnl	*last;
+	int			i;
 
-	new = malloc(sizeof(t_list));
+	new = malloc(sizeof(t_list_gnl));
 	if (!new)
 		return (ft_lstfree(lst));
 	new->content = malloc((BUFFER_SIZE + 1) * sizeof(char));
@@ -98,7 +98,7 @@ void	ft_lstnew_back(t_list **lst, char *str, int len)
 		*lst = new;
 		return ;
 	}
-	last = ft_lstlast(*lst);
+	last = ft_lstlast_gnl(*lst);
 	last->next = new;
 }
 
@@ -106,7 +106,7 @@ void	ft_lstnew_back(t_list **lst, char *str, int len)
 **	Add an element at the end of list.
 */
 
-t_list	*ft_lstlast(t_list *lst)
+t_list_gnl	*ft_lstlast_gnl(t_list_gnl *lst)
 {
 	if (!lst || !lst->next)
 		return (lst);

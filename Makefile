@@ -6,7 +6,7 @@
 #    By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 13:26:52 by gaducurt          #+#    #+#              #
-#    Updated: 2025/02/25 15:04:36 by gaducurt         ###   ########.fr        #
+#    Updated: 2025/11/12 14:08:35 by gaducurt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,11 +17,10 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 INC =	libft.h						\
-		gnl/get_next_line.h			\
 		gnl/get_next_line_bonus.h	\
 		ft_printf/ft_printf.h
 
-OBJDIR =	objdir
+OBJDIR =	.obj
 
 SRC = 	ft_isalpha.c					\
 		ft_isdigit.c					\
@@ -66,8 +65,6 @@ SRC = 	ft_isalpha.c					\
 		ft_lstclear_bonus.c				\
 		ft_lstiter_bonus.c				\
 		ft_lstmap_bonus.c				\
-		gnl/get_next_line.c				\
-		gnl/get_next_line_utils.c		\
 		gnl/get_next_line_bonus.c		\
 		gnl/get_next_line_utils_bonus.c	\
 		ft_printf/ft_printf.c			\
@@ -80,7 +77,7 @@ SRC = 	ft_isalpha.c					\
 
 OBJ = $(patsubst %.c, $(OBJDIR)/%.o, $(SRC))
 
-all: $(NAME)
+all: .print_header $(NAME)
 
 $(NAME): $(OBJ) $(INC)
 	ar rcs $(NAME) $?
@@ -97,8 +94,44 @@ $(OBJDIR):
 
 clean:
 	rm -rf $(OBJ) $(OBJDIR)
+
 fclean: clean
 	rm -rf $(NAME)
+
 re: fclean all
 
+.print_header:
+	$(call DISPLAY_TITLE)
+
 .PHONY: all fclean re
+
+########################################################################################################################
+#                                                       COLORS                                                         #
+########################################################################################################################
+
+DEF_COLOR 	= \033[0;39m
+GREEN		= \033[1;92m
+BLUE		= \033[0;94m
+
+########################################################################################################################
+#                                                       DISPLAY                                                        #
+########################################################################################################################
+
+define DISPLAY_TITLE
+						@echo "$(BLUE)  _      _____ ____  ______ _______ "
+						@echo " | |    |_   _|  _ \|  ____|__   __|"
+						@echo " | |      | | | |_| | |__     | |   "
+						@echo " | |      | | |  _ <|  __|    | |   "
+						@echo " | |____ _| |_| |_| | |       | |   "
+						@echo " |______|_____|____/|_|       |_|   "
+						@echo "$(GREEN)                         by gaducurt$(DEF_COLOR)"
+						@printf "\n"
+endef
+
+
+
+
+
+
+                                    
+                                    

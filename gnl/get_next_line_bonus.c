@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/10 18:03:59 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/12/10 18:04:07 by gaducurt         ###   ########.fr       */
+/*   Updated: 2025/05/07 14:06:51 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@
 **	Copy the characters after '\n', in stock.
 */
 
-static char	*ft_stock(t_list **lst, char stock[BUFFER_SIZE + 1])
+static char	*ft_stock(t_list_gnl **lst, char stock[BUFFER_SIZE + 1])
 {
-	t_list	*last;
-	int		i;
-	int		j;
+	t_list_gnl	*last;
+	int			i;
+	int			j;
 
 	i = 0;
 	while (i < BUFFER_SIZE)
@@ -29,7 +29,7 @@ static char	*ft_stock(t_list **lst, char stock[BUFFER_SIZE + 1])
 	j = 0;
 	if (!(*lst))
 		return (NULL);
-	last = ft_lstlast(*lst);
+	last = ft_lstlast_gnl(*lst);
 	if (!last->content || !ft_checklst(last))
 		return (NULL);
 	while (last->content[i])
@@ -49,7 +49,7 @@ static char	*ft_stock(t_list **lst, char stock[BUFFER_SIZE + 1])
 **	Read n elements of the first line with read() and copy in buff[].
 */
 
-static void	ft_new_line(t_list **lst, int fd, char *stock)
+static void	ft_new_line(t_list_gnl **lst, int fd, char *stock)
 {
 	int		rd;
 	char	*buff;
@@ -80,7 +80,7 @@ static void	ft_new_line(t_list **lst, int fd, char *stock)
 **	Copy stock in the first list element.
 */
 
-static void	ft_add_stock(t_list **lst, char *stock)
+static void	ft_add_stock(t_list_gnl **lst, char *stock)
 {
 	int	i;
 
@@ -103,12 +103,12 @@ static void	ft_add_stock(t_list **lst, char *stock)
 **	Copy each list element in the result tab.
 */
 
-static char	*ft_newtab(t_list **lst)
+static char	*ft_newtab(t_list_gnl **lst)
 {
-	t_list	*tmp;
-	char	*result;
-	int		i;
-	int		j;
+	t_list_gnl	*tmp;
+	char		*result;
+	int			i;
+	int			j;
 
 	tmp = *lst;
 	result = malloc(((ft_lst_size(tmp) * BUFFER_SIZE) + 1) * sizeof(char));
@@ -136,7 +136,7 @@ char	*get_next_line(int fd)
 {
 	static char	stock[1024][BUFFER_SIZE + 1];
 	char		*result;
-	t_list		*lst;
+	t_list_gnl	*lst;
 
 	result = NULL;
 	if (fd < 0 || BUFFER_SIZE <= 0)
@@ -145,7 +145,7 @@ char	*get_next_line(int fd)
 		lst = NULL;
 	else
 	{
-		lst = malloc(sizeof(t_list));
+		lst = malloc(sizeof(t_list_gnl));
 		if (!lst)
 			return (NULL);
 		ft_add_stock(&lst, stock[fd]);

@@ -17,8 +17,6 @@ int	ft_putnbr_unsigned(unsigned int n)
 	int	count;
 
 	count = 0;
-	if (n < 0)
-		return (-1);
 	if (n > 9)
 	{
 		count += ft_putnbr_unsigned((n / 10));

@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 10:13:14 by gaducurt          #+#    #+#             */
-/*   Updated: 2025/11/12 14:54:48 by gaducurt         ###   ########.fr       */
+/*   Updated: 2025/12/08 10:43:16 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 #include <float.h>
 #include <stdio.h>
 
-float	ft_atof(const char *nptr)
+double	ft_atof(const char *nptr)
 {
-	float	result;
-	float	decimal;
+	double	result;
+	double	decimal;
 	int	inv;
 
 	result = 0.0;

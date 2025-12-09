@@ -6,7 +6,7 @@
 #    By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 13:26:52 by gaducurt          #+#    #+#              #
-#    Updated: 2025/12/06 11:27:10 by gaducurt         ###   ########.fr        #
+#    Updated: 2025/12/09 18:18:23 by gaducurt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,7 +84,7 @@ OBJ = $(patsubst %.c, $(OBJDIR)/%.o, $(SRC))
 
 all: $(NAME)
 
-$(NAME): $(OBJ) $(INC)
+$(NAME): $(OBJ)
 	ar rcs $(NAME) $?
 
 $(OBJDIR)/%.o: %.c | $(OBJDIR)
@@ -105,4 +105,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all fclean re
+.PHONY: all clean fclean re

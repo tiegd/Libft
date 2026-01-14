@@ -6,14 +6,14 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 14:18:57 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:20:12 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 15:07:56 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MATHVECT_H
-# define MATHVECT_H
+#ifndef LIBMATH_H
+# define LIBMATH_H
 
-# include "libmath_structures.h"
+# include "libmath_struct.h"
 
 /*----------VECTOR----------*/
 

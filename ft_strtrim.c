@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 17:32:48 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/20 17:32:50 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:20:05 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,14 +52,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	dest[i] = '\0';
 	return ((char *) dest);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char const	*s1 = "  \t \t \n   \n\n\n\t";
-	char const	*set = " \n\t";
-
-	printf("%s\n", ft_strtrim(s1, set));
-}
-*/

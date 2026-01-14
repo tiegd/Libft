@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 08:22:45 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 12:34:45 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:19:17 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-
-int	main()
-{
-	const char	s[] = "Salut !";
-	char	c = 'u';
-
-	printf("%s", (ft_strchr(s, c)));
-}
-*/

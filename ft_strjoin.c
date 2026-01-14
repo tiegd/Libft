@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 16:38:18 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/20 16:38:20 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:19:24 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	const char	*s1 = "Salut ";
-	const char	*s2 = "ca va ?";
-
-	printf("%s\n", ft_strjoin(s1, s2));
-}
-*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 12:51:04 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/20 12:51:08 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:18:52 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (str1[i] - str2[i]);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	size_t		n;
-	const char	s1[] = "zyxbcdefgh";
-	const char	s2[] = "abcdefgxyz";
-
-	n = 0;
-	printf("%d\n", (ft_memcmp(s1, s2, n)));
-	printf("%d\n", (memcmp(s1, s2, n)));
-}
-*/

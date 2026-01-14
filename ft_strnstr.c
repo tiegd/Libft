@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 08:34:20 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 11:40:26 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:19:58 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-
-int	main()
-{
-	const char	big[] = "Une aiguille dans une botte de foin";
-	const char	little[] = "g";
-
-	printf("found : %s", (ft_strnstr(big, little, 7)));
-}*/

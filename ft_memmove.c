@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 10:44:30 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/19 10:44:31 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:18:59 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,18 +40,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char str1[] = "ABCDEFGHIJ";
-	char str2[] = "ABCDEFGHIJ";
-    
-    memmove(str1 + 1, str1 + 2, 3);
-    ft_memmove(str2 + 1, str2 + 2, 3);
-
-    printf("Résultat : %s\n", str1);
-    printf("Résultat : %s\n", str2);
-    return 0;
-}*/

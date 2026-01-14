@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 07:55:40 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/19 10:39:09 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:18:56 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,20 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-
-int	main()
-{
-	char	dest1[7];
-	char	dest2[7];
-	char	*src = "Hello !";
-
-	ft_memcpy((void *) dest1, (const void *) src, 6);
-	printf("%s\n", (dest1));
-
-	memcpy((void *) dest2, (const void *) src, 6);
-	printf("%s\n", dest2);
-}
-*/

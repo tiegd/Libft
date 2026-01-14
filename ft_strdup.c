@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 14:45:34 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 15:03:12 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:19:20 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,3 @@ char	*ft_strdup(const char *s)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-int	main()
-{
-	int	i = 0;
-	char	s[] = "Bonjour !";
-
-	ft_strdup(s);
-	while (s[i])
-	{
-		write(1, &s[i], 1);
-		i++;
-	}
-}*/

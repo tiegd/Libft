@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaducurt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 08:43:52 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/22 08:43:55 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:18:33 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,17 +61,3 @@ char	*ft_itoa(int n)
 	dest = ft_putdest(count, n, dest, i);
 	return (dest);
 }
-/*
-#include <stdio.h>
-
-int	main()
-{
-	printf("n = %s\n", ft_itoa(0));
-	printf("n = %s\n", ft_itoa(42));
-	printf("n = %s\n", ft_itoa(45625));
-	printf("n = %s\n", ft_itoa(-51));
-	printf("n = %s\n", ft_itoa(-1));
-	printf("n = %s\n", ft_itoa(2147483647));
-	printf("n = %s\n", ft_itoa(-2147483648));
-}
-*/

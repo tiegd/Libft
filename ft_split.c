@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 06:36:41 by gaducurt          #+#    #+#             */
-/*   Updated: 2025/02/25 11:33:01 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:19:13 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,39 +105,3 @@ char	**ft_split(char const *s, char c)
 	double_tab = ft_new_str(double_tab, s, c, nb_word);
 	return (double_tab);
 }
-
-/*
-#include <stdio.h>
-
-int	main()
-{
-	// char	*s = "hello!";
-	// char	c = ' ';
-
-	// char    **str;
-    // int    i;
-
-    // i = 0;
-    // str = ft_split(s, c);
-    // while (str[i] != NULL)
-    // {
-
-    //     printf("%s\n",str[i]);
-    //     i++;
-    // }
-    // i = 0;
-    // while (str[i])
-    //     free(str[i++]);
-    // free(str);
-    // return (0);
-	char **tab;
-
-	tab = ft_split("hello!", ' ');
-	int i = 0;
-	while (tab[i] != NULL)
-	{
-		printf("- '%s'\n", tab[i]);
-		i++;
-	}
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 12:37:28 by gaducurt          #+#    #+#             */
-/*   Updated: 2024/11/18 14:42:26 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:18:15 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,17 +39,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (count * inv);
 }
-/*
-#include <stdio.h>
-#include <stdlib.h>
-
-int	main(int argc, const char **argv)
-{
-	if (argc == 2)
-	{
-		printf("my atoi = %d\n", (ft_atoi(argv[1])));
-		printf("vrai atoi = %d\n", (atoi(argv[1])));
-	}
-	
-}
-*/

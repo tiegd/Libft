@@ -6,7 +6,7 @@
 #    By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 13:26:52 by gaducurt          #+#    #+#              #
-#    Updated: 2026/01/14 14:51:39 by gaducurt         ###   ########.fr        #
+#    Updated: 2026/01/14 15:40:02 by gaducurt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,6 +80,7 @@ SRC = 	ft_isalpha.c						\
 		mylib/ft_atof.c						\
 		mylib/ft_strcmp.c					\
 		mylib/multi_split.c					\
+		mylib/split_charset.c				\
 		libmath/matrix/all_rotate_matrix.c	\
 		libmath/matrix/rotate_x.c			\
 		libmath/matrix/rotate_y.c			\

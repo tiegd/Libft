@@ -6,12 +6,12 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 14:20:38 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 15:08:43 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/14 19:08:08 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBMATH_STRUCTURES_H
-# define LIBMATH_STRUCTURES_H
+#ifndef LIBMATH_STRUCT_H
+# define LIBMATH_STRUCT_H
 
 typedef struct s_tuple
 {

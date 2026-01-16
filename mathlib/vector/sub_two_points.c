@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   translate_matrix.c                                 :+:      :+:    :+:   */
+/*   sub_two_points.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/01 11:49:42 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:55:44 by gaducurt         ###   ########.fr       */
+/*   Created: 2025/11/28 17:22:32 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/01/16 13:44:19 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libmath.h"
+#include "../mathlib.h"
 
-/*
-Translation matrix = 	{{1, 0, 0, trx},
-						 {0, 1, 0, try},
-						 {0, 0, 1, trz},
-						 {0, 0, 0, 1}}
-*/
-
-t_tuple	translate_matrix(t_tuple t, double tr_x, double tr_y, double tr_z)
+t_vec3	sub_two_points(t_point3 p1, t_point3 p2)
 {
-	t_tuple	res;
+	t_vec3	res;
 
 	init_tuple(&res);
-	if (t.w != 0 && t.w != 1)
+	if (p1.w != 1 || p2.w != 1)
 		return (res);
-	res.x = t.x + tr_x;
-	res.y = t.y + tr_y;
-	res.z = t.z + tr_z;
-	res.w = t.w;
+	res.x = p1.x - p2.x;
+	res.y = p1.y - p2.y;
+	res.z = p1.z - p2.z;
+	res.w = p1.w - p2.w;
 	return (res);
 }

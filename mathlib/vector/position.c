@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   add_vect_point.c                                   :+:      :+:    :+:   */
+/*   position.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/28 15:56:28 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:55:47 by gaducurt         ###   ########.fr       */
+/*   Created: 2025/12/08 10:04:44 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/01/16 13:44:09 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libmath.h"
+#include "../mathlib.h"
 
-t_point3	add_vect_point(t_vec3 v, t_point3 p)
+/*
+This function ise used for ifnd the piont at a distance t on a ray.
+*/
+
+t_point3	position(t_point3 ray_origin, t_vec3 ray_dir, double t)
 {
-	t_point3	res;
+	t_point3	pos;
 
-	init_tuple(&res);
-	if (v.w != 0)
-		return (res);
-	if (p.w != 1)
-		return (res);
-	res.x = v.x + p.x;
-	res.y = v.y + p.y;
-	res.z = v.z + p.z;
-	res.w = v.w + p.w;
-	return (res);
+	pos = scalar_mult(ray_dir, t);
+	pos = add_vect_point(pos, ray_origin);
+	return (pos);
 }

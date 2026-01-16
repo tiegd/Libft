@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   inv_tup.c                                          :+:      :+:    :+:   */
+/*   scalar_mult.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/29 12:14:27 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:55:57 by gaducurt         ###   ########.fr       */
+/*   Created: 2025/11/29 13:43:56 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/01/16 13:44:14 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libmath.h"
+#include "../mathlib.h"
 
-t_tuple	inv_tup(t_tuple v)
+t_tuple	scalar_mult(t_tuple v, double factor)
 {
-	t_tuple	neg_tup;
+	t_tuple	res;
 
-	init_tuple(&neg_tup);
-	neg_tup.x -= v.x;
-	neg_tup.y -= v.y;
-	neg_tup.z -= v.z;
-	neg_tup.w -= v.w;
-	return (neg_tup);
+	init_tuple(&res);
+	res.x = v.x * factor;
+	res.y = v.y * factor;
+	res.z = v.z * factor;
+	res.w = v.w * factor;
+	return (res);
 }

@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sub_two_vect.c                                     :+:      :+:    :+:   */
+/*   normalize_vect.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/28 17:38:03 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:56:11 by gaducurt         ###   ########.fr       */
+/*   Created: 2025/11/29 14:25:26 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/01/16 13:44:06 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libmath.h"
+#include "../mathlib.h"
 
-t_vec3	sub_two_vect(t_vec3 v1, t_vec3 v2)
+t_vec3	normalize_vect(t_vec3 v)
 {
 	t_vec3	res;
+	double	mag;
 
 	init_tuple(&res);
-	if (v1.w != 0 || v2.w != 0)
-		return (res);
-	res.x = v1.x - v2.x;
-	res.y = v1.y - v2.y;
-	res.z = v1.z - v2.z;
-	res.w = v1.w - v2.w;
+	mag = vect_mag(v);
+	res.x = v.x / mag;
+	res.y = v.y / mag;
+	res.z = v.z / mag;
 	return (res);
 }

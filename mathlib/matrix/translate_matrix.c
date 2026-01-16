@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rotate_y.c                                         :+:      :+:    :+:   */
+/*   translate_matrix.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/03 14:09:05 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:57:11 by gaducurt         ###   ########.fr       */
+/*   Created: 2025/12/01 11:49:42 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/01/16 13:43:50 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libmath.h"
-#include <math.h>
+#include "../mathlib.h"
 
 /*
-Rotation matrix along the y-axis = 	{{cos(teta),  0, sin(teta)},
-						 			 {0, 		  1, 0		  }
-						 			 {-sin(teta), 0, cos(teta)}}
+Translation matrix = 	{{1, 0, 0, trx},
+						 {0, 1, 0, try},
+						 {0, 0, 1, trz},
+						 {0, 0, 0, 1}}
 */
 
-t_tuple	rotate_y(t_tuple t, double alpha)
+t_tuple	translate_matrix(t_tuple t, double tr_x, double tr_y, double tr_z)
 {
 	t_tuple	res;
-	double	rad_alpha;
 
-	rad_alpha = (M_PI / 180) * alpha;
 	init_tuple(&res);
-	res.x = cosf(rad_alpha) * t.x + sinf(rad_alpha) * t.z;
-	res.y = t.y;
-	res.z = -sinf(rad_alpha) * t.x + cosf(rad_alpha) * t.z;
+	if (t.w != 0 && t.w != 1)
+		return (res);
+	res.x = t.x + tr_x;
+	res.y = t.y + tr_y;
+	res.z = t.z + tr_z;
 	res.w = t.w;
 	return (res);
 }

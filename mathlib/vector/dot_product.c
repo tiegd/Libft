@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sub_point_vect.c                                   :+:      :+:    :+:   */
+/*   dot_product.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/28 17:25:56 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:56:07 by gaducurt         ###   ########.fr       */
+/*   Created: 2025/11/29 15:29:12 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/01/16 13:43:58 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libmath.h"
+#include "../mathlib.h"
 
-t_point3	sub_point_vect(t_point3 p, t_vec3 v)
+double	dot_product(t_vec3 v1, t_vec3 v2)
 {
-	t_point3	res;
+	double	res;
 
-	init_tuple(&res);
-	if (p.w != 1)
-		return (res);
-	if (v.w != 0)
-		return (res);
-	res.x = p.x - v.x;
-	res.y = p.y - v.y;
-	res.z = p.z - v.z;
-	res.w = p.w - v.w;
+	res = (v1.x * v2.x) + (v1.y * v2.y) + (v1.z * v2.z) + (v1.w * v2.w);
 	return (res);
 }

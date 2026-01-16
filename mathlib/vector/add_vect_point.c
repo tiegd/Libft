@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vect_mag.c                                         :+:      :+:    :+:   */
+/*   add_vect_point.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/29 14:02:34 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:56:53 by gaducurt         ###   ########.fr       */
+/*   Created: 2025/11/28 15:56:28 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/01/16 13:43:53 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <math.h>
-#include "../libmath.h"
+#include "../mathlib.h"
 
-double	vect_mag(t_vec3 v)
+t_point3	add_vect_point(t_vec3 v, t_point3 p)
 {
-	double	res;
+	t_point3	res;
 
-	res = sqrtf(powf(v.x, 2) + powf(v.y, 2) + powf(v.z, 2));
+	init_tuple(&res);
+	if (v.w != 0)
+		return (res);
+	if (p.w != 1)
+		return (res);
+	res.x = v.x + p.x;
+	res.y = v.y + p.y;
+	res.z = v.z + p.z;
+	res.w = v.w + p.w;
 	return (res);
 }

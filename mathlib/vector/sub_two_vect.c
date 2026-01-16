@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   scaling_matrix.c                                   :+:      :+:    :+:   */
+/*   sub_two_vect.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/01 14:32:34 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:55:43 by gaducurt         ###   ########.fr       */
+/*   Created: 2025/11/28 17:38:03 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/01/16 13:44:22 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libmath.h"
+#include "../mathlib.h"
 
-t_tuple	scaling_matrix(t_tuple t, double sx, double sy, double sz)
+t_vec3	sub_two_vect(t_vec3 v1, t_vec3 v2)
 {
-	t_tuple	res;
+	t_vec3	res;
 
 	init_tuple(&res);
-	res.x = t.x * sx;
-	res.y = t.y * sy;
-	res.z = t.z * sz;
-	res.w = t.w;
+	if (v1.w != 0 || v2.w != 0)
+		return (res);
+	res.x = v1.x - v2.x;
+	res.y = v1.y - v2.y;
+	res.z = v1.z - v2.z;
+	res.w = v1.w - v2.w;
 	return (res);
 }

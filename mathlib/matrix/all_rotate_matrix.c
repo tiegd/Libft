@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_tuple.c                                       :+:      :+:    :+:   */
+/*   all_rotate_matrix.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/28 17:21:04 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:55:55 by gaducurt         ###   ########.fr       */
+/*   Created: 2025/12/01 14:32:41 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/01/16 13:43:19 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libmath.h"
+#include "../mathlib.h"
+#include <math.h>
 
-void	init_tuple(t_tuple *t)
+t_tuple	all_rotate_matrix(t_tuple t, double alpha_x, double alpha_y,
+	double alpha_z)
 {
-	t->x = 0;
-	t->y = 0;
-	t->z = 0;
-	t->w = 0;
+	t_tuple	res;
+
+	res = t;
+	res = rotate_x(res, alpha_x);
+	res = rotate_y(res, alpha_y);
+	res = rotate_z(res, alpha_z);
+	return (res);
 }

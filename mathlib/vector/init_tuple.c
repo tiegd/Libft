@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   dot_product.c                                      :+:      :+:    :+:   */
+/*   init_tuple.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/29 15:29:12 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:55:52 by gaducurt         ###   ########.fr       */
+/*   Created: 2025/11/28 17:21:04 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/01/16 13:44:01 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libmath.h"
+#include "../mathlib.h"
 
-double	dot_product(t_vec3 v1, t_vec3 v2)
+void	init_tuple(t_tuple *t)
 {
-	double	res;
-
-	res = (v1.x * v2.x) + (v1.y * v2.y) + (v1.z * v2.z) + (v1.w * v2.w);
-	return (res);
+	t->x = 0;
+	t->y = 0;
+	t->z = 0;
+	t->w = 0;
 }

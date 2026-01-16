@@ -6,11 +6,11 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/03 14:07:41 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:57:15 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/16 13:43:45 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libmath.h"
+#include "../mathlib.h"
 #include <math.h>
 
 /*

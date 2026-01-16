@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   normalize_vect.c                                   :+:      :+:    :+:   */
+/*   rotate_x.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/29 14:25:26 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 14:55:59 by gaducurt         ###   ########.fr       */
+/*   Created: 2025/12/03 14:10:19 by gaducurt          #+#    #+#             */
+/*   Updated: 2026/01/16 13:43:38 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libmath.h"
+#include "../mathlib.h"
+#include <math.h>
 
-t_vec3	normalize_vect(t_vec3 v)
+/*
+Rotation matrix along the x-axis = 	{{1, 0, 		0		  },
+						 			 {0, cos(teta), -sin(teta)}
+						 			 {0, sin(teta), cos(teta)}}
+*/
+
+t_tuple	rotate_x(t_tuple t, double alpha)
 {
-	t_vec3	res;
-	double	mag;
+	t_tuple	res;
+	double	rad_alpha;
 
+	rad_alpha = (M_PI / 180) * alpha;
 	init_tuple(&res);
-	mag = vect_mag(v);
-	res.x = v.x / mag;
-	res.y = v.y / mag;
-	res.z = v.z / mag;
+	res.x = t.x;
+	res.y = cosf(rad_alpha) * t.y - sinf(rad_alpha) * t.z;
+	res.z = sinf(rad_alpha) * t.y + cosf(rad_alpha) * t.z;
+	res.w = t.w;
 	return (res);
 }

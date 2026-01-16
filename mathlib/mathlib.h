@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libmath.h                                          :+:      :+:    :+:   */
+/*   mathlib.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 14:18:57 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/14 15:07:56 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/16 13:44:42 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBMATH_H
-# define LIBMATH_H
+#ifndef MATHLIB_H
+# define MATHLIB_H
 
-# include "libmath_struct.h"
+# include "mathlib_struct.h"
 
 /*----------VECTOR----------*/
 

@@ -6,7 +6,7 @@
 #    By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 13:26:52 by gaducurt          #+#    #+#              #
-#    Updated: 2026/01/14 15:50:41 by gaducurt         ###   ########.fr        #
+#    Updated: 2026/01/16 15:02:29 by gaducurt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,25 +82,25 @@ SRC = 	ft_isalpha.c						\
 		mylib/multi_split.c					\
 		mylib/split_charset.c				\
 		mylib/ft_swap.c						\
-		libmath/matrix/all_rotate_matrix.c	\
-		libmath/matrix/rotate_x.c			\
-		libmath/matrix/rotate_y.c			\
-		libmath/matrix/rotate_z.c			\
-		libmath/matrix/scaling_matrix.c		\
-		libmath/matrix/translate_matrix.c	\
-		libmath/vector/add_vect_point.c		\
-		libmath/vector/cross_product.c		\
-		libmath/vector/dot_product.c		\
-		libmath/vector/init_tuple.c			\
-		libmath/vector/inv_tup.c			\
-		libmath/vector/normalize_vect.c		\
-		libmath/vector/position.c			\
-		libmath/vector/scalar_div.c			\
-		libmath/vector/scalar_mult.c		\
-		libmath/vector/sub_point_vect.c		\
-		libmath/vector/sub_two_points.c		\
-		libmath/vector/sub_two_vect.c		\
-		libmath/vector/vect_mag.c			\
+		mathlib/matrix/all_rotate_matrix.c	\
+		mathlib/matrix/rotate_x.c			\
+		mathlib/matrix/rotate_y.c			\
+		mathlib/matrix/rotate_z.c			\
+		mathlib/matrix/scaling_matrix.c		\
+		mathlib/matrix/translate_matrix.c	\
+		mathlib/vector/add_vect_point.c		\
+		mathlib/vector/cross_product.c		\
+		mathlib/vector/dot_product.c		\
+		mathlib/vector/init_tuple.c			\
+		mathlib/vector/inv_tup.c			\
+		mathlib/vector/normalize_vect.c		\
+		mathlib/vector/position.c			\
+		mathlib/vector/scalar_div.c			\
+		mathlib/vector/scalar_mult.c		\
+		mathlib/vector/sub_point_vect.c		\
+		mathlib/vector/sub_two_points.c		\
+		mathlib/vector/sub_two_vect.c		\
+		mathlib/vector/vect_mag.c			\
 
 OBJ = $(patsubst %.c, $(OBJDIR)/%.o, $(SRC))
 

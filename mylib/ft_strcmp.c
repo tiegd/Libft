@@ -6,22 +6,18 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 14:40:06 by gaducurt          #+#    #+#             */
-/*   Updated: 2025/11/12 14:40:28 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/23 15:38:55 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+
 int	ft_strcmp(char *s1, char *s2)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (s1[i] && s2[i])
-	{
-		if (s1[i] != s2[i])
-			return (0);
+	while (s1[i] && s1[i] == s2[i])
 		i++;
-	}
-	if (s1[i] - s2[i] == 0)
-		return (1);
-	return (0);
+	return (s1[i] - s2[i]);
 }

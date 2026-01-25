@@ -6,12 +6,12 @@
 /*   By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 10:13:14 by gaducurt          #+#    #+#             */
-/*   Updated: 2026/01/11 15:39:26 by gaducurt         ###   ########.fr       */
+/*   Updated: 2026/01/25 10:21:51 by gaducurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <limits.h>
-#include <float.h>
+// #include <float.h>
 #include <stdio.h>
 
 // double	ft_atof(const char *nptr)

@@ -6,7 +6,7 @@
 #    By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 13:26:52 by gaducurt          #+#    #+#              #
-#    Updated: 2026/01/26 19:42:38 by gaducurt         ###   ########.fr        #
+#    Updated: 2026/01/26 19:48:40 by gaducurt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -109,7 +109,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $?
 
-$(OBJDIR)/%.o: %.c $(INC)
+$(OBJDIR)/%.o: %.c $(INC) Makefile
 	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
 

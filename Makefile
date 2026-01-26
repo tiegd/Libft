@@ -6,7 +6,7 @@
 #    By: gaducurt <gaducurt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 13:26:52 by gaducurt          #+#    #+#              #
-#    Updated: 2026/01/16 15:02:29 by gaducurt         ###   ########.fr        #
+#    Updated: 2026/01/26 19:42:38 by gaducurt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ INC =	libft.h						\
 		gnl/get_next_line_bonus.h	\
 		ft_printf/ft_printf.h		\
 		mylib/mylib.h				\
-		libmath/libmath.h	
+		mathlib/mathlib.h	
 
 OBJDIR =	.obj
 
@@ -109,15 +109,9 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $?
 
-$(OBJDIR)/%.o: %.c | $(OBJDIR)
+$(OBJDIR)/%.o: %.c $(INC)
 	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
-
-$(OBJDIR):
-	mkdir -p $(OBJDIR)
-
-%.o : %.c Makefile $(INC)
-	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
 	rm -rf $(OBJ) $(OBJDIR)
